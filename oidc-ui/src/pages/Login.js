@@ -189,10 +189,8 @@ export default function LoginPage({ i18nKeyPrefix = "header" }) {
     let oAuthDetailResponse = oidcService.getOAuthDetails();
     setClientLogoURL(oAuthDetailResponse?.logoUrl);
     setClientName(oAuthDetailResponse?.clientName);
-
     handleBackButtonClick();
   };
-
   return (
     <>
       <Background
